@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+  <html lang="en"> 
+  <head> 
+<meta http-equiv="content-type" content="text/html" charset=UTF="8"/>
+
+
+<title>Order</title>
+<link rel="icon" type="image/x-icon" href="https://cdn5.vectorstock.com/i/1000x1000/35/29/cute-pizza-slice-food-cartoon-face-vector-20493529.jpg">
+<style>
+body{
+font-family:Tahoma;
+}
+.style{
+color:#ff884d;
+}
+
+
+a:hover{
+color:#b30000;
+}
+.button{
+border-radius:8px;
+border:none;
+color:white;
+font-size:20px;
+width:140px;
+height:70px;
+background-color: #ffbf80;
+}
+.floatleft{
+float:left;
+padding:10px;
+}
+.clear{
+clear:both;
+}
+.orderbutton{
+  
+  height: 40px;
+  width:150px;
+  background-color: #ffbf80;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 25px; 
+  cursor: pointer;
+
+
+
+}
+.orderbutton a{
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+ 
+
+}
+.submit{
+  background-color: #e60606;
+  padding: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.reset{
+  background-color: #e60606;
+  padding: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+
+}
+
+</style>
+</head>
+<body>
+<img src="https://qph.fs.quoracdn.net/main-qimg-a1f767b7cc8fb49fd2ef0d489858ab15" width="1300px"; height="200px"; alt="pizza order" />
+<br/><br/>
+<div class="orderbutton"> 
+<a  href="PIZZA (3).html" > Return to Home </a> 
+</div>
+<img src="https://64.media.tumblr.com/1c73bb45e63fb1f7341143e58a869f80/tumblr_mhw4w4nT1f1qmurn4o1_500.gifv" alt="food" width="75px" height="75px" />
+<fieldset>
+<legend><h1>Order Your Pizza Now</h1></legend>
+
+<form method="post" action="process.php">
+
+ <p><label for="Customername">Customer name:</label>
+ <input type="text" id="Customername" name="Customername" size="20" required></p>
+ <p><label for="phone">Telephone</label>
+ <input type="tel" id="phone" name="phone" placeholder="70-123-456" pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}" required></p>
+ <p><label for="email">Email</label>
+ <input type="email" id="email" name="email" ></p>
+ <p><label for="street">Street Address</label>
+  <input type="text" id="street" name="street" /></p>
+  <p><label for="zip code">ZIP or postal code(optional)</label>
+  <input type="number" id="zip code"name="zip code"  /></p>
+  <p><label for="city">City</label>
+  <input type="text" id="city" name="city" /></p>
+  <p><label for="country">Country or region</label>
+  <input type="text" id="country" name="country" /></p>
+ 
+  <fieldset>
+    <legend>Pizza Size</legend>
+	 <div class="floatleft"><img src="https://images.surferseo.art/8b8194be-899a-414f-a48b-cf40c1a8df5f.png" width="1000px" height="150px"/></div>
+	<div class="clear"> <p ><label><input type="radio" name="size" required value="personal" />Personal (Size:<span class="style"> 10 inch</span> Slices:<span class="style">4</span> Servings:<span class="style">1</span>)</label></p>
+   <p><input type="radio" id="size" name="Small" required value="Small" / > 
+   <label for="Small"> Small (Size:<span class="style"> 12 inch</span> Slices:<span class="style">6</span> Servings:<span class="style"> 1-2</span>)</label></p>
+   <p><label><input type="radio" name="size" required value="Medium" />Medium (Size:<span class="style"> 14 inch</span> Slices:<span class="style">8</span> Servings:<span class="style"> 2-3</span></label>)</p>
+   <p><label><input type="radio" name="size" required value="large" />Large (Size:<span class="style"> 16 inch</span> Slices:<span class="style">10</span> Servings:<span class="style">3-4</span></label>)</p>
+  <p><label><input type="radio" name="size" required value="xlarge" />X-Large (Size:<span class="style">20 inch</span> Slices:<span class="style">12</span> Servings:<span class="style">4-5</span></label>)</p>
+ </div>
+ </fieldset>
+  
+<fieldset>
+ <legend>Pizza Toppings </legend>
+ <p><label><input type="checkbox" name="topping" value="corn" />Corn</label><img src="https://i.pinimg.com/originals/55/01/d0/5501d0c369e89aff4c352c3fb66dc123.jpg" alt="food" width="75px" height="75px" /></p>
+ <p><label><input type="checkbox"  name="topping" value="extracheese" />Extra Cheese</label><img src="https://illustoon.com/photo/4793.png" alt="food" width="75px" height="75px" /></p>
+ <p><label><input type="checkbox"  name="topping" value="onion" />Onion</label><img src="https://static.vecteezy.com/system/resources/previews/007/938/448/original/simple-image-of-sliced-onion-free-vector.jpg" alt="food" width="75px" height="75px" /></p>
+<p><label><input type="checkbox"  name="topping" value="mushroom"/ >Mushroom</label><img src="https://www.clipartbest.com/cliparts/jcx/6EB/jcx6EBqyi.png" alt="food" width="75px" height="75px" /></p>
+</fieldset>
+    <fieldset>
+     <legend>Cheeses</legend>
+         <p><label> <input type="radio" name="cheese" value="Mozzarella" />Mozzarella</label> <img src="https://media1.tenor.com/images/e92c60b60b12e54308d5daca57b84f94/tenor.gif?itemid=10751902" alt="food" width="150px" height="75px" /></p>
+         <p><label>  <input type="radio" name="cheese" value="Reduced Fat" />Reduced Fat</label></p>
+          <p><label> <input type="radio" name="cheese" value="Feta" />Feta</label></p>
+		
+    </fieldset>
+        <fieldset>
+          <legend>Sauces</legend>
+          <p><label> <input type="radio" name="sauce" value="Pizza Sauce" />Pizza Sauce</label>  <img src="https://c.tenor.com/uQkoOuPD0Q8AAAAd/dip-gravy.gif" alt="food" width="250px" height="75px" /></</p>
+          <p><label> <input type="radio" name="sauce" value="BBQ Sauce" />BBQ Sauce</label></p>
+          <p><label> <input type="radio" name="sauce" value="Garlic Sauce" />Garlic Sauce</label></p>
+        </fieldset>
+		
+       
+  <p><label for="time">Preferred delivery time: </label>
+    <input type="time" name="time" id="time" min="11:00" max="21:00" step="900" required/></p>
+	
+	<p><label for="comment" > Delivery instructions:</label></p>
+	<p><textarea id="comment" name="comment" maxlength="1000" rows="3" cols="20"></textarea></p>
+
+   <p> <button class="submit"> Submit Order </button></p>
+   <p ><input type="reset" value="Reset" class="reset"/></p>
+   </fieldset>
+   </form>
+
+   </body>
+   </html>
+
+
+
+
+
+
+
